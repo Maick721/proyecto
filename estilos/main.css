@@ -1,0 +1,268 @@
+/* Establece tamaño de fuente base */
+html {
+    font-size: 16px; /* Tamaño de fuente base */
+
+    /* Media query para ajustar el tamaño de la fuente en pantallas pequeñas */
+    @media screen and (max-width: 400px) {
+        font-size: 9.94px; /* Ajusta según sea necesario */
+    }
+}
+
+/* Detalles de la página */
+body {
+    background-color: rgb(0, 0, 0); 
+    font-family: 'Slabo 27px', serif; 
+    font-size: 1.2rem; 
+    line-height: 1.5;
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina padding predeterminado */
+}
+
+/* HEADER ========================================================================== */
+.header-logo { 
+    text-align: center; 
+}
+
+.header-logo, .site-logo {
+    color: rgba(229, 255, 0, 0.603); 
+}
+
+/* Barra de navegación */
+.header-nav-wrap {
+    background-color: rgb(83, 52, 6);
+    width: 100%; /* Asegúrate de que ocupa todo el ancho */
+}
+
+.header-nav-wrap ul {
+    display: flex;
+    justify-content: center; 
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    gap: 20px; /* Espacio entre los ítems */
+}
+
+.header-nav-wrap a {
+    background-color: rgba(0, 0, 0, 0.103);
+    font-size: 1rem; /* Usar rem para mejor adaptabilidad */
+    text-transform: uppercase; 
+    color: rgb(255, 255, 255);
+    transition: all 0.7s ease-in-out; 
+    text-decoration: none; 
+    letter-spacing: 0.2rem; 
+    padding: 10px 15px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados para un mejor aspecto */
+}
+
+.header-nav-wrap li {
+    display: inline-block; /* Para que los elementos se alineen horizontalmente */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header-nav-wrap ul {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 10px; /* Espacio reducido entre ítems */
+    }
+
+    .header-nav-wrap a {
+        font-size: 0.9rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+a:hover, a:focus, a:active {
+    color: rgb(251, 255, 0);
+}
+/* FIN DEL HEADER ========================================================================== */
+
+/* BODY ============================ */
+h1 {
+    color: rgb(255, 191, 0);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(238, 0, 255);
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin: 20px;
+}
+
+h4 {
+    text-align: center;
+    margin: 0 2px;
+    color: #fff;
+}
+
+/* FIN DEL BODY ============================ */
+
+/* NOSOTROS */
+.nosotros-img {
+    max-width: 100%; /* Se adapta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 20px 0; /* Margen superior e inferior */
+    display: block; /* Asegura que la imagen sea un bloque para centrar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+}
+
+/* FIN DE NOSOTROS */
+
+/* BARRA DE REDES SOCIALES ========================================== */
+.header-social {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.388);
+    padding: 1.1rem; /* Espaciado interno */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; 
+    gap: 20px; /* Espacio entre los ítems, ajustado */
+}
+
+footer {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; 
+    height: 100px;
+}
+
+.header-social {
+    list-style: none;
+    display: flex;
+    margin-bottom: 0.9px;
+}
+
+.header-social li {
+    display: inline-block;
+}
+
+.header-social a {
+    text-decoration: none;
+    font-size: 1.125rem; /* Usar rem para mejor adaptabilidad */
+    color: #ffffff; /* Color del texto */
+    letter-spacing: 0.2rem;
+}
+
+.header-social i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header-social {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 10px; /* Espacio reducido entre ítems */
+    }
+}
+
+/* FIN DE LA BARRA DE REDES SOCIALES ========================================== */
+
+/* PRODUCTOS ============================ */
+#producto {
+    padding: 20px;
+    background-color: #000000; 
+}
+
+.img-catalogo {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.img-catalogo h4 {
+    color: #000000;
+}
+
+
+.producto {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    margin: 7px; 
+    padding: 15px; 
+    width: calc(33% - 20px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    box-sizing: border-box; 
+}
+
+.producto img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+.texto {
+    margin: 10px 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+
+.contador {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 10px 0; 
+}
+
+button {
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 20px); /* Dos productos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: calc(100% - 20px); /* Un producto por fila en pantallas pequeñas */
+    }
+}
+/* FIN DE PRODUCTOS ============================ */
+
+/* Inicio de proceso =========================== */
+.proceso-img {
+    text-align: center;
+}
+/* Fin del proceso =========================== */
+
+/* CLIENTES ============================ */
+#clientes {
+    text-align: center;
+}
+
+.cliente {
+    max-width: 900px; 
+    margin: 20px auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+.cliente img {
+    max-width: 250px; 
+    margin-right: 20px; 
+}
+
+.texto {
+    text-align: left; 
+}  
+/* FIN DE CLIENTES ============================ */
